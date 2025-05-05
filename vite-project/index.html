@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulari de registre</title>
+  <script type="module" src="./src/main.js" defer></script>
+  <style>
+    .error { color: red; font-size: 0.9em; }
+    form div { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Formulari de Registre</h1>
+  <form id="registration-form" novalidate>
+    <div>
+      <label>Nom complet:</label>
+      <input type="text" id="full_name" />
+      <div class="error" id="error-full_name"></div>
+    </div>
+    <div>
+      <label>Nom d'usuari:</label>
+      <input type="text" id="username" />
+      <div class="error" id="error-username"></div>
+    </div>
+    <div>
+      <label>Correu electrònic:</label>
+      <input type="email" id="email" />
+      <div class="error" id="error-email"></div>
+    </div>
+    <div>
+      <label>Telèfon mòbil:</label>
+      <input type="text" id="phone" />
+      <div class="error" id="error-phone"></div>
+    </div>
+    <div>
+      <label>Data de naixement:</label>
+      <input type="date" id="birthdate" />
+      <div class="error" id="error-birthdate"></div>
+    </div>
+    <div>
+      <label>Codi postal:</label>
+      <input type="text" id="postal_code" />
+      <div class="error" id="error-postal_code"></div>
+    </div>
+    <div>
+      <label>Adreça:</label>
+      <input type="text" id="address" />
+      <div class="error" id="error-address"></div>
+    </div>
+    <div>
+      <label>Contrasenya:</label>
+      <input type="password" id="password" />
+      <div class="error" id="error-password"></div>
+    </div>
+    <div>
+      <label>Confirmar contrasenya:</label>
+      <input type="password" id="confirm_password" />
+      <div class="error" id="error-confirm_password"></div>
+    </div>
+    <div>
+      <label><input type="checkbox" id="terms" /> Accepto els termes i condicions</label>
+      <div class="error" id="error-terms"></div>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
